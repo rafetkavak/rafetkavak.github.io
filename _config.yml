@@ -187,6 +187,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  termprojects:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -244,7 +247,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
+      
+  # _termprojects
+  - scope:
+      path: ""
+      type: termprojects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      
 # Sass/SCSS
 sass:
   sass_dir: _sass
